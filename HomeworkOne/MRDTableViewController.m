@@ -74,7 +74,7 @@
 	return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(MRDTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self cancelImageForRow:indexPath.row];
 }
 
@@ -96,10 +96,8 @@
 				if ([currentUUID isEqualToString:cell.uuid]) {
 					cell.imageView.image = image;
 					[cell setNeedsLayout];
-					if (row == 0) {
-						NSLog(@"Assign image %@ to cell %@", image, weakCell);
-						NSLog(@"%d", row);
-					}
+					NSLog(@"Assign image %@ to cell %@", image, weakCell);
+					NSLog(@"%d", row);
 				}
 			});
 		}

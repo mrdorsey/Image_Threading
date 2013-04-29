@@ -122,7 +122,7 @@ static NSString *const kMRDImagesKey = @"images";
 		NSParameterAssert([operation isKindOfClass:[UWCEHTTPOperation class]]);
 		if ([[[operation url] absoluteString] isEqualToString:[url absoluteString]]) {
 			[operation cancel];
-			NSLog(@"Canceling %@", [operation url]);
+	//		NSLog(@"Canceling %@", [operation url]);
 		}
 	}
 }
