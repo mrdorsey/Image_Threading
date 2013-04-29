@@ -16,13 +16,19 @@
 		4594A1F0172C6DC500D86402 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4594A1EF172C6DC500D86402 /* Default.png */; };
 		4594A1F2172C6DC500D86402 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4594A1F1172C6DC500D86402 /* Default@2x.png */; };
 		4594A1F4172C6DC500D86402 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4594A1F3172C6DC500D86402 /* Default-568h@2x.png */; };
-		4594A1F7172C6DC500D86402 /* MRDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A1F6172C6DC500D86402 /* MRDViewController.m */; };
-		4594A1FA172C6DC500D86402 /* MRDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4594A1F8172C6DC500D86402 /* MRDViewController.xib */; };
 		4594A202172C6DC500D86402 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4594A201172C6DC500D86402 /* SenTestingKit.framework */; };
 		4594A203172C6DC500D86402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4594A1DD172C6DC500D86402 /* UIKit.framework */; };
 		4594A204172C6DC500D86402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4594A1DF172C6DC500D86402 /* Foundation.framework */; };
 		4594A20C172C6DC600D86402 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4594A20A172C6DC600D86402 /* InfoPlist.strings */; };
 		4594A20F172C6DC600D86402 /* HomeworkOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A20E172C6DC600D86402 /* HomeworkOneTests.m */; };
+		4594A21A172C6DE500D86402 /* UIImage+UWCEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A219172C6DE500D86402 /* UIImage+UWCEAdditions.m */; };
+		4594A21D172C6E2E00D86402 /* MRDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A21C172C6E2E00D86402 /* MRDTableViewController.m */; };
+		4594A220172C6E4B00D86402 /* MRDDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A21F172C6E4B00D86402 /* MRDDataController.m */; };
+		4594A223172C86B200D86402 /* UWCEHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A222172C86B200D86402 /* UWCEHTTPOperation.m */; };
+		4594A226172DDE7A00D86402 /* MRDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A225172DDE7A00D86402 /* MRDTableViewCell.m */; };
+		4594A229172DFACC00D86402 /* MRDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A228172DFACC00D86402 /* MRDImage.m */; };
+		4594A22F172DFFB900D86402 /* NSLock+UWCELockBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A22B172DFFB900D86402 /* NSLock+UWCELockBlock.m */; };
+		4594A230172DFFB900D86402 /* UWCERunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4594A22E172DFFB900D86402 /* UWCERunLoopOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +55,29 @@
 		4594A1EF172C6DC500D86402 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4594A1F1172C6DC500D86402 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4594A1F3172C6DC500D86402 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4594A1F5172C6DC500D86402 /* MRDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDViewController.h; sourceTree = "<group>"; };
-		4594A1F6172C6DC500D86402 /* MRDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRDViewController.m; sourceTree = "<group>"; };
-		4594A1F9172C6DC500D86402 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MRDViewController.xib; sourceTree = "<group>"; };
 		4594A200172C6DC500D86402 /* HomeworkOneTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworkOneTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4594A201172C6DC500D86402 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4594A209172C6DC600D86402 /* HomeworkOneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeworkOneTests-Info.plist"; sourceTree = "<group>"; };
 		4594A20B172C6DC600D86402 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4594A20D172C6DC600D86402 /* HomeworkOneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeworkOneTests.h; sourceTree = "<group>"; };
 		4594A20E172C6DC600D86402 /* HomeworkOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkOneTests.m; sourceTree = "<group>"; };
+		4594A218172C6DE500D86402 /* UIImage+UWCEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UWCEAdditions.h"; sourceTree = "<group>"; };
+		4594A219172C6DE500D86402 /* UIImage+UWCEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UWCEAdditions.m"; sourceTree = "<group>"; };
+		4594A21B172C6E2E00D86402 /* MRDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDTableViewController.h; sourceTree = "<group>"; };
+		4594A21C172C6E2E00D86402 /* MRDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDTableViewController.m; sourceTree = "<group>"; };
+		4594A21E172C6E4B00D86402 /* MRDDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDDataController.h; sourceTree = "<group>"; };
+		4594A21F172C6E4B00D86402 /* MRDDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDDataController.m; sourceTree = "<group>"; };
+		4594A221172C86B200D86402 /* UWCEHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEHTTPOperation.h; sourceTree = "<group>"; };
+		4594A222172C86B200D86402 /* UWCEHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEHTTPOperation.m; sourceTree = "<group>"; };
+		4594A224172DDE7A00D86402 /* MRDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDTableViewCell.h; sourceTree = "<group>"; };
+		4594A225172DDE7A00D86402 /* MRDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDTableViewCell.m; sourceTree = "<group>"; };
+		4594A227172DFACC00D86402 /* MRDImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDImage.h; sourceTree = "<group>"; };
+		4594A228172DFACC00D86402 /* MRDImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDImage.m; sourceTree = "<group>"; };
+		4594A22A172DFFB800D86402 /* NSLock+UWCELockBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLock+UWCELockBlock.h"; sourceTree = "<group>"; };
+		4594A22B172DFFB900D86402 /* NSLock+UWCELockBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLock+UWCELockBlock.m"; sourceTree = "<group>"; };
+		4594A22C172DFFB900D86402 /* UWCERunLoopOperation_Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCERunLoopOperation_Internals.h; sourceTree = "<group>"; };
+		4594A22D172DFFB900D86402 /* UWCERunLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCERunLoopOperation.h; sourceTree = "<group>"; };
+		4594A22E172DFFB900D86402 /* UWCERunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCERunLoopOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +137,25 @@
 		4594A1E3172C6DC500D86402 /* HomeworkOne */ = {
 			isa = PBXGroup;
 			children = (
+				4594A22A172DFFB800D86402 /* NSLock+UWCELockBlock.h */,
+				4594A22B172DFFB900D86402 /* NSLock+UWCELockBlock.m */,
+				4594A22C172DFFB900D86402 /* UWCERunLoopOperation_Internals.h */,
+				4594A22D172DFFB900D86402 /* UWCERunLoopOperation.h */,
+				4594A22E172DFFB900D86402 /* UWCERunLoopOperation.m */,
 				4594A1EC172C6DC500D86402 /* MRDAppDelegate.h */,
 				4594A1ED172C6DC500D86402 /* MRDAppDelegate.m */,
-				4594A1F5172C6DC500D86402 /* MRDViewController.h */,
-				4594A1F6172C6DC500D86402 /* MRDViewController.m */,
-				4594A1F8172C6DC500D86402 /* MRDViewController.xib */,
+				4594A21E172C6E4B00D86402 /* MRDDataController.h */,
+				4594A21F172C6E4B00D86402 /* MRDDataController.m */,
+				4594A227172DFACC00D86402 /* MRDImage.h */,
+				4594A228172DFACC00D86402 /* MRDImage.m */,
+				4594A224172DDE7A00D86402 /* MRDTableViewCell.h */,
+				4594A225172DDE7A00D86402 /* MRDTableViewCell.m */,
+				4594A21B172C6E2E00D86402 /* MRDTableViewController.h */,
+				4594A21C172C6E2E00D86402 /* MRDTableViewController.m */,
+				4594A218172C6DE500D86402 /* UIImage+UWCEAdditions.h */,
+				4594A219172C6DE500D86402 /* UIImage+UWCEAdditions.m */,
+				4594A221172C86B200D86402 /* UWCEHTTPOperation.h */,
+				4594A222172C86B200D86402 /* UWCEHTTPOperation.m */,
 				4594A1E4172C6DC500D86402 /* Supporting Files */,
 			);
 			path = HomeworkOne;
@@ -236,7 +270,6 @@
 				4594A1F0172C6DC500D86402 /* Default.png in Resources */,
 				4594A1F2172C6DC500D86402 /* Default@2x.png in Resources */,
 				4594A1F4172C6DC500D86402 /* Default-568h@2x.png in Resources */,
-				4594A1FA172C6DC500D86402 /* MRDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +306,14 @@
 			files = (
 				4594A1EA172C6DC500D86402 /* main.m in Sources */,
 				4594A1EE172C6DC500D86402 /* MRDAppDelegate.m in Sources */,
-				4594A1F7172C6DC500D86402 /* MRDViewController.m in Sources */,
+				4594A21A172C6DE500D86402 /* UIImage+UWCEAdditions.m in Sources */,
+				4594A21D172C6E2E00D86402 /* MRDTableViewController.m in Sources */,
+				4594A220172C6E4B00D86402 /* MRDDataController.m in Sources */,
+				4594A223172C86B200D86402 /* UWCEHTTPOperation.m in Sources */,
+				4594A226172DDE7A00D86402 /* MRDTableViewCell.m in Sources */,
+				4594A229172DFACC00D86402 /* MRDImage.m in Sources */,
+				4594A22F172DFFB900D86402 /* NSLock+UWCELockBlock.m in Sources */,
+				4594A230172DFFB900D86402 /* UWCERunLoopOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +342,6 @@
 				4594A1E7172C6DC500D86402 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4594A1F8172C6DC500D86402 /* MRDViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4594A1F9172C6DC500D86402 /* en */,
-			);
-			name = MRDViewController.xib;
 			sourceTree = "<group>";
 		};
 		4594A20A172C6DC600D86402 /* InfoPlist.strings */ = {
