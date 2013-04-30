@@ -92,7 +92,6 @@
 	__weak typeof(*cell) *weakCell = cell;
 	[[MRDDataController sharedInstance] fetchImageForURL:url completionBlock:^(UIImage *image, NSError *error) {
 		if (image) {
-			image = [image uwce_scaleImageToSize:CGSizeMake(50, 50)];
 			dispatch_async(dispatch_get_main_queue(), ^(void) {
 				NSString *currentUUID = cell.uuid;
 				if ([currentUUID isEqualToString:uuid]) {

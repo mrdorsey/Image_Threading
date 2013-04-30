@@ -8,6 +8,7 @@
 
 #import "MRDDataController.h"
 #import "UWCEHTTPOperation.h"
+#import "UIImage+UWCEAdditions.h"
 
 static NSString *const kMRDImageFeedURLString = @"http://f.cl.ly/items/1K3Z0U1M3X0t3k0P3c0k/images.json";
 static NSString *const kMRDImagesKey = @"images";
@@ -101,10 +102,15 @@ static NSString *const kMRDImagesKey = @"images";
 		if (strongOp.error) {
 			completionBlock(nil, strongOp.error);
 		}
-		else {
-			UIImage *image = [[UIImage alloc] initWithData:strongOp.result];
-			if (image) {
-				completionBlock(image, nil);
+		else {			
+			NSData *imageData = strongOp.result;
+			if (imageData) {
+				[self.workQueue addOperationWithBlock:^{
+					UIImage *newImage = [[UIImage alloc] initWithData:strongOp.result];
+					newImage = [newImage uwce_scaleImageToSize:CGSizeMake(50, 50)];
+					
+					completionBlock(newImage, nil);
+				}];
 			}
 			else {
 				completionBlock(nil, [NSError errorWithDomain:@"" code:0 userInfo:nil]);
@@ -122,7 +128,7 @@ static NSString *const kMRDImagesKey = @"images";
 		NSParameterAssert([operation isKindOfClass:[UWCEHTTPOperation class]]);
 		if ([[[operation url] absoluteString] isEqualToString:[url absoluteString]]) {
 			[operation cancel];
-	//		NSLog(@"Canceling %@", [operation url]);
+			NSLog(@"Canceling %@", [operation url]);
 		}
 	}
 }
