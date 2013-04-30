@@ -95,8 +95,8 @@
 			dispatch_async(dispatch_get_main_queue(), ^(void) {
 				NSString *currentUUID = cell.uuid;
 				if ([currentUUID isEqualToString:uuid]) {
-					cell.imageView.image = image;
-					[cell setNeedsLayout];
+					weakCell.imageView.image = image;
+					[weakCell setNeedsLayout];
 					NSLog(@"Assign image %@ to cell %@", image, weakCell);
 					NSLog(@"%d", row);
 				}
