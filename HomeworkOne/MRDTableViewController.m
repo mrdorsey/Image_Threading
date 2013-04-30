@@ -76,11 +76,13 @@
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(MRDTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self cancelImageForRow:indexPath.row];
+	cell.imageView.image = nil;
 }
 
 #pragma mark - load image
 - (void)fetchImageForCell:(MRDTableViewCell *)cell row:(NSInteger)row {
 	MRDImage *image = [self.items objectAtIndex:row];
+	NSString *uuid = image.uuid;
 	NSURL *url = image.url;
 	if (!url) {
 		return;
@@ -93,7 +95,7 @@
 			image = [image uwce_scaleImageToSize:CGSizeMake(50, 50)];
 			dispatch_async(dispatch_get_main_queue(), ^(void) {
 				NSString *currentUUID = cell.uuid;
-				if ([currentUUID isEqualToString:cell.uuid]) {
+				if ([currentUUID isEqualToString:uuid]) {
 					cell.imageView.image = image;
 					[cell setNeedsLayout];
 					NSLog(@"Assign image %@ to cell %@", image, weakCell);
