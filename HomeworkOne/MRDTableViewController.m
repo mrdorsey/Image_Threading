@@ -76,7 +76,6 @@
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(MRDTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self cancelImageForRow:indexPath.row];
-	cell.imageView.image = nil;
 }
 
 #pragma mark - load image
